@@ -1,0 +1,211 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+header {
+    background-color: rgba(160, 158, 158, .3);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgb(33, 37, 41)
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    color: rgb(33, 37, 41)
+}
+.nav-link.active::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: #133c3d;
+    transition: .3s;
+}
+.nav-link::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #C7FBFC;
+    transition: .3s;
+}
+.nav-link:hover::after{
+    width: 100%;
+    transition: .3s;
+}
+
+
+
+.Logo{
+    height: 60px;
+    align-content: flex-start;
+}
+nav li{
+    list-style: none;
+    display: inline-block;
+    align-self: flex-end;
+}
+nav li a{
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    padding: 8px;
+    margin: 6px;
+}
+
+.card__content{
+    display: flex;
+    flex-direction: row;
+    animation: slideMe 1s ease-in 0.5s;
+    position: relative;
+    transition: transform 3s;
+    transform-style: preserve-3d;
+    transition-duration: 1.5s;
+    align-items: center;
+    margin-left: 300px;
+}
+@keyframes slideMe{
+    0%{
+        transform: translateY(-500px);
+        opacity: 0;
+    }
+    40%{
+        transform: translateY(0);
+    }
+    70%{
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+    95%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+
+}
+
+.card__content img{
+    -webkit-animation:shake 0.09s ease-in-out .5s alternate;
+    animation-iteration-count: 2;
+    animation-delay: 1.5s;
+    width: 30px;
+    align-self: center;
+    padding: 14px;
+    margin-top: 40px;
+}
+
+@-webkit-keyframes shake{
+    from{
+        -webkit-transform: rotate(20deg);
+
+    }
+    to{
+        -webkit-transform: rotate(-20deg);
+        -webkit-transform-origin: center center;
+    }
+}
+#ernährung, #ernährung ~ article{
+    text-align: center;
+    margin: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/*Pfeilicon*/
+
+.arrow img{
+    width: 15px;
+    margin: 10px;
+}
+.arrow{
+    position: absolute;
+    margin: 10px;
+}
+.arrow:hover{
+    cursor: pointer;
+}
+.flex-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 170px;
+}
+.flex-wrapper div{
+    flex: 1;
+}
+.erstberatung{
+    text-align: center;
+    margin: 0px 100px 0px 30px;
+}
+h2{
+    margin-bottom: 20px;
+}
+.beratungsliste{
+    margin: 20px 0px 0px 40px;
+}
+button{
+    border-style: none;
+    background: white;
+    cursor: pointer;
+    text-align: center;
+}
+.button{
+    /*verschiebung button nach rechts*/
+    margin-left: 170px;
+}
+.paw:hover{
+    height: 76px;
+    transition: .2s ease-in-out;
+}
+div button img{
+    height: 30px;
+}
+.paw{
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: absolute;
+}
+.beratungsbild{
+    border-radius: 1px;
+    width: 350px;
+    height: auto;
+    align-self: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+.hintergrund{
+    background: #fff7d8;
+    margin-top: 80px;
+    padding-top: 20px;
+}
+.erster_article ul{
+    margin: 40px;
+    margin-left: 230px;
+    text-align: initial;
+}
+.erster_article{
+    text-align: center;
+}
+.hintergrund h3{
+    margin: 25px;
+    font-size: 1.5em;
+}
+.zweiter_article{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.zweiter_article h4{
+    font-size: 1.5em;
+    margin: 20px;
+}
+.bild{
+    background-size: cover;
+    background-image: url(Bilder/IMG_6004.JPG);
+    width: 100%;
+    height: 50px;
+}
+.Ausgeh-service{
+    margin-left: 230px;
+    text-align: initial;
+    margin-top: 30px;
+}
