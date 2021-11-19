@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Josefin Sans', sans-serif;
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 25% 10%;
+    grid-template-areas: 
+    "hintergrundbild"
+    "flex";
+}
+.hintergrundbild{
+    background-image: url(Hintergrundbild.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1200px;
+    grid-area: hintergrundbild;
+}
+header{
+    display: flex;
+    background-color: rgba(255,255,255,.7);
+    justify-content: space-between;
+    align-items: center;  
+}
+.Logo{
+    height: 60px;
+    align-content: flex-start;
+}
+li{
+    list-style: none;
+    display: inline-block;
+    align-self: flex-end;
+}
+li a{
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    padding: 8px;
+    margin: 6px;
+}
+/*Link zur ernährungsberatung*/
+button a{
+    text-decoration: none;
+    color: white;
+}
+.menu::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #C7FBFC;
+    transition: .3s;
+}
+.menu:hover::after{
+    width: 100%;
+    transition: .3s;
+}
+.aufhaenger{
+    height: 340px;
+    display: grid;
+    grid-template-rows: auto;
+    justify-items: center;
+    align-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: 60% 10%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "h1 h1 h1"
+    "button1 span button2";
+}
+h1{
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+    grid-area: h1;
+    font-size: 30px;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 20px;
+    
+}
+.button1{
+    grid-area: button1;
+}
+.button2{
+    grid-area: button2;
+}
+.container button{
+    justify-self: center;
+    justify-content: center;
+    width: 125px;
+    background-color: #7AAFB1;
+    color: white;
+    box-shadow: inset 0px 0px 3px rgba(0,0,0,0.30);
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+    
+}
+.container button:hover{
+    font-size: 14.25px;
+    width: 126px;
+    box-shadow: inset 0px 0px 20px rgba(255,255,255,0.15);
+    cursor: pointer;
+}
+main{
+    margin: 0;
+    padding: 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: flex;
+    padding-top: 50px;
+}
+.flex img{
+    width: 250px;
+    height: auto;
+    display: inline-block;
+    margin-right: 3em;
+    border-radius: 3px;
+}
+.flex div{
+    margin-left: 5em;
+}
+h2{
+    margin-bottom: 10px;
+}
+.flex button{
+    background-color: #DCFFA8;
+    color: black;
+    border-radius: 3px;
+    border: none;
+    font-size: 11.5px;
+    width: 65px;
+    height: 20px;
+    font-weight: bold;
+    margin: 9px;
+}
+.flex button:hover{
+    font-size: 12px;
+    width: 66px;
+    height: 20.5px;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 20px rgba(255,255,255,0.15);
+}
+.Baeume img{
+    width: 100%;
+    height: auto;
+    margin-top: 80px;
+}
+
+
+
