@@ -3,6 +3,12 @@
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
 }
+h1 {
+    font-size: 3.5rem;
+}
+p, b {
+    font-size: 1.8rem;
+}
 header {
     background-color: rgba(160, 158, 158, .3);
 }
@@ -32,6 +38,21 @@ header {
     width: 100%;
     transition: .3s;
 }
+.link_arrow {
+    width: 5%;
+}
+#ernährungsberatung {
+    margin-top: 180px;
+}
+#paw {
+    height: 80px;
+    transition: height .5s ease-in-out;
+}
+#paw:hover {
+    height: 90px;
+}
+
+/* neues CSS Ende */
 
 
 
@@ -152,19 +173,11 @@ button{
     /*verschiebung button nach rechts*/
     margin-left: 170px;
 }
-.paw:hover{
-    height: 76px;
-    transition: .2s ease-in-out;
-}
+
 div button img{
     height: 30px;
 }
-.paw{
-    width: 70px;
-    height: 70px;
-    display: block;
-    position: absolute;
-}
+
 .beratungsbild{
     border-radius: 1px;
     width: 350px;
