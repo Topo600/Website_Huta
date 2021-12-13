@@ -1,61 +1,21 @@
-* {
+*{
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
 }
-h1 {
-    font-size: 3.5rem;
+.hintergrundbild{
+    background-image: url(fertig.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 1200px;
+    grid-area: hintergrundbild;
 }
-p, b {
-    font-size: 1.8rem;
-}
-header {
+header{
+    display: flex;
     background-color: rgba(160, 158, 158, .3);
+    justify-content: space-between;
+    align-items: center;  
 }
-.navbar-dark .navbar-nav .nav-link {
-    color: rgb(33, 37, 41)
-}
-.navbar-dark .navbar-nav .nav-link.active {
-    color: rgb(33, 37, 41)
-}
-.nav-link.active::after{
-    content: '';
-    display: block;
-    height: 2px;
-    width: 100%;
-    background: #133c3d;
-    transition: .3s;
-}
-.nav-link::after{
-    content: '';
-    display: block;
-    height: 2px;
-    width: 0;
-    background: #C7FBFC;
-    transition: .3s;
-}
-.nav-link:hover::after{
-    width: 100%;
-    transition: .3s;
-}
-.link_arrow {
-    width: 5%;
-}
-#ernährungsberatung {
-    margin-top: 180px;
-}
-#paw {
-    height: 80px;
-    transition: height .5s ease-in-out;
-}
-#paw:hover {
-    height: 90px;
-}
-
-/* neues CSS Ende */
-
-
-
 .Logo{
     height: 60px;
     align-content: flex-start;
@@ -73,7 +33,18 @@ nav li a{
     padding: 8px;
     margin: 6px;
 }
-
+.menu::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: #C7FBFC;
+    transition: .3s;
+}
+.menu:hover::after{
+    width: 100%;
+    transition: .3s;
+}
 .card__content{
     display: flex;
     flex-direction: row;
@@ -173,11 +144,19 @@ button{
     /*verschiebung button nach rechts*/
     margin-left: 170px;
 }
-
+.paw:hover{
+    height: 76px;
+    transition: .2s ease-in-out;
+}
 div button img{
     height: 30px;
 }
-
+.paw{
+    width: 70px;
+    height: 70px;
+    display: block;
+    position: absolute;
+}
 .beratungsbild{
     border-radius: 1px;
     width: 350px;
